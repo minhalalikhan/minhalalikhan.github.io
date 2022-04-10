@@ -20,8 +20,8 @@
             font-family: 'audiowide';
             color: var(--text);
         }
-        
-         :root {
+
+        :root {
             --blue: #1e90ff;
             --white: #ffffff;
             --text: white;
@@ -29,12 +29,12 @@
             --bg: black;
             --neon: rgb(0 255 253);
         }
-        
-         ::selection {
+
+        ::selection {
             color: black;
             background-color: white;
         }
-        
+
         body,
         html {
             margin: 0;
@@ -44,7 +44,7 @@
             background-image: url('main-screen.png');
             background-size: 100vw 100vh;
         }
-        
+
         #home {
             z-index: -10;
             width: 100%;
@@ -53,7 +53,7 @@
             top: 0;
             left: 0;
         }
-        
+
         h1,
         h4,
         h3 {
@@ -61,8 +61,9 @@
             margin: 0;
             letter-spacing: 3px;
         }
+
         /* nav bar */
-        
+
         nav {
             width: 100%;
             min-height: 80px;
@@ -73,50 +74,52 @@
             backdrop-filter: blur(10px);
             top: 0;
         }
-        
+
         nav ul a:hover {
             padding-bottom: 5px;
             border-bottom: 1px solid white;
         }
-        
+
         .icon i {
             display: none;
         }
+
         /*           main  :   */
-        
+
         main h1 {
             margin: 0;
             padding-bottom: 30px;
             font-family: 'Audiowide';
             font-size: xxx-large;
         }
-        
+
         main h4 {
             font-size: 16px;
             margin: 0;
             padding-top: 20px;
         }
-        
+
         main {
             width: 100%;
             text-align: center;
             min-height: calc(100vh - 80px);
             background-color: transparent;
         }
-        
+
         main p {
             width: 60%;
             margin: 0 auto;
         }
+
         /*           section  :   */
-        
+
         section {
             width: 100%;
             min-height: 100vh;
             padding: 100px 10px 10px;
             text-align: center;
         }
-        
+
         .content {
             padding: 40px 20px;
             width: 80%;
@@ -124,24 +127,25 @@
             display: flex;
             flex-wrap: wrap;
         }
+
         /*   MAIN ICONS ( RULES , PERKS )   */
-        
+
         .main-icons {
             flex: 1;
             position: relative;
         }
-        
+
         .main-icon-box {
             width: 96px;
             height: 96px;
             position: relative;
         }
-        
+
         .main-icon-box img {
             width: 96px;
             height: 96px;
         }
-        
+
         .icon_shadow {
             height: 60px;
             width: 60px;
@@ -150,18 +154,20 @@
             filter: blur(20px);
             left: 20%;
         }
+
         /*  CONTENT TEXT     */
-        
+
         .content_text h2 {
             font-size: 18px;
         }
-        
+
         .content_text {
             flex: 2;
             text-align: left;
         }
+
         /*   theme , theme card */
-        
+
         .theme_card {
             width: 300px;
             height: 250px;
@@ -170,7 +176,7 @@
             margin: 10px;
             overflow: hidden;
         }
-        
+
         .card_shadow {
             background-color: var(--card-color);
             position: absolute;
@@ -182,7 +188,7 @@
             height: 40%;
             margin: 0 auto;
         }
-        
+
         .card_box {
             width: 100%;
             height: 100%;
@@ -193,14 +199,14 @@
             background-color: transparent;
             backdrop-filter: blur(40px) contrast(1.1);
         }
-        
+
         .card_box p {
             bottom: 10%;
             position: absolute;
             margin: 0 auto;
             width: 100%;
         }
-        
+
         .card_box img {
             position: absolute;
             margin: 0 auto;
@@ -208,7 +214,7 @@
             top: 15%;
             left: 35%;
         }
-        
+
         ul {
             list-style: none;
             display: flex;
@@ -216,27 +222,27 @@
             margin: 0 auto;
             flex-direction: row;
         }
-        
+
         li {
             list-style: none;
             margin: 0 20px;
         }
-        
+
         a {
             text-decoration: none;
             color: white;
         }
-        
+
         p {
             font-size: 16px;
         }
-        
+
         #action_buttons {
             display: flex;
             flex-direction: row;
             display: block;
         }
-        
+
         button {
             padding: 5px 15px;
             width: 100px;
@@ -245,29 +251,31 @@
             margin: 0 15px;
             border-radius: 10px;
         }
-        
+
         #gbu_,
         #gbu_:hover {
             font-size: 30px;
             text-decoration: none;
             width: fit-content;
         }
+
         /*   contact  */
-        
+
         .contact {
             flex: 1;
         }
-        
+
         .contact .description {
             padding: 20px;
         }
+
         /*  #####  footer section   ######*/
-        
+
         footer {
             width: 100%;
             text-align: center;
         }
-        
+
         .footr {
             display: flex;
             flex-direction: row;
@@ -277,45 +285,52 @@
             margin: 0 auto;
             text-align: left;
         }
-        
+
         .footr div {
             flex: 1;
         }
-        
+
         hr {
             width: 80%;
             border: 0;
             height: 1px;
             background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #767676, rgba(0, 0, 0, 0));
         }
-        
+
         @media only screen and (max-width: 600px) {
             nav {
                 position: fixed;
                 top: 0;
             }
+
             nav,
             nav ul {
                 flex-direction: column;
             }
+
             nav ul {
                 display: none;
             }
+
             .navshow {
                 display: block;
             }
+
             nav ul li {
                 padding: 10px;
             }
+
             .icon i {
                 display: block;
                 position: absolute;
                 right: 20px;
                 top: 20px;
             }
+
             main {
                 padding-top: 80px;
             }
+
             .content {
                 flex-direction: column;
             }
@@ -363,15 +378,20 @@
     <main>
         <H4 style="color: var(--neon);">Techno Club Presents</H4>
         <h1>RESEARCH BY LEARNING</h1>
-        <p>Techno Cultural Club is organizing a 2 months long team based event, Research By Learning Hackathon for the GBU students from 17th Feb to 17th April, 2022 in School of Information and Communication Technology (SOICT). A perfect opportunity for
-            students to showcase their Excellent Writing skills and Innovation . Participating in this event will surely add value to your Resume and leverage your chances for cracking Good Placements in your Final Year.
+        <p>Techno Cultural Club is organizing a 2 months long team based event, Research By Learning Hackathon for the
+            GBU students from 17th Feb to 17th April, 2022 in School of Information and Communication Technology
+            (SOICT). A perfect opportunity for
+            students to showcase their Excellent Writing skills and Innovation . Participating in this event will surely
+            add value to your Resume and leverage your chances for cracking Good Placements in your Final Year.
             <br> <br> <br> Hackathon Starts - 17th February 2022 <br> <br> Hackathon Ends - 17th April, 2022
 
         </p>
 
         <div id="action_buttons" style="padding-top: 80px;">
-            <button style=" background-color: var(--neon);"> <a href="https://bit.ly/3J9kxMA" style="color: black;">Register</a></button>
-            <button style="background-color: transparent;border: 1px solid var(--neon);"> <a href="#rules" style="color: var(--neon);">Details</a></button>
+            <button style=" background-color: var(--neon);"> <a href="https://bit.ly/3J9kxMA"
+                    style="color: black;">Register</a></button>
+            <button style="background-color: transparent;border: 1px solid var(--neon);"> <a href="#rules"
+                    style="color: var(--neon);">Details</a></button>
         </div>
 
     </main>
@@ -388,7 +408,8 @@
                 <p> 1. Registration Fees Rs 50/- per team. </p>
                 <p>2. Team Size : 1-3 Members (max : 3).</p>
                 <p> 3. No intervening Certificates.</p>
-                <p> 4. Attendance will be given on the days of evaluation to those who will register and submit their work on time.</p>
+                <p> 4. Attendance will be given on the days of evaluation to those who will register and submit their
+                    work on time.</p>
             </div>
         </div>
     </section>
@@ -446,14 +467,19 @@
             </div>
             <div class="content_text">
                 <p> Achievement Certificates & Cash Prizes for students securing Top Positions in Hackathon.</p>
-                <p> Excellence Certificates and Consolation Prizes for Top 5 position in Hackathon other than winners. </p>
+                <p> Excellence Certificates and Consolation Prizes for Top 5 position in Hackathon other than winners.
+                </p>
                 <p> Completion Certificates for all the attendees who will </p>
                 <p> complete this Hackathon and submit their work .</p>
-                <p> Virtual Badges of different colors will be given to the good Performers on a weekly / task basis.</p>
-                <p> You will get a chance to be a part of Awareness Sessions , organized by National Intellectual Property Awareness Mission (NIPAM),</p>
-                <p> organization of Government of India for which you will be getting Certificates by the Government of India .</p>
+                <p> Virtual Badges of different colors will be given to the good Performers on a weekly / task basis.
+                </p>
+                <p> You will get a chance to be a part of Awareness Sessions , organized by National Intellectual
+                    Property Awareness Mission (NIPAM),</p>
+                <p> organization of Government of India for which you will be getting Certificates by the Government of
+                    India .</p>
                 <p> Ranking will be given to all on a task basis .</p>
-                <p> Winners of each level and different task completion will get Appreciation Certificates & rewards after completion of their work & this hackathon .</p>
+                <p> Winners of each level and different task completion will get Appreciation Certificates & rewards
+                    after completion of their work & this hackathon .</p>
 
             </div>
         </div>
@@ -463,7 +489,7 @@
         <div class="content">
             <div class="contact">
 
-                <img src="Naved.png">
+                <img src="naved.jpeg">
 
                 <div class="description">
                     Dr. Navaid.Z.Rizvi
@@ -491,7 +517,8 @@
             </div>
             <div id="social ">
                 <h3>JOIN US</h3>
-                <h5>Don't miss a thing! Receive daily news You should connect social area for Any Proper Updates Anytime</h5>
+                <h5>Don't miss a thing! Receive daily news You should connect social area for Any Proper Updates Anytime
+                </h5>
                 <div id="action_buttons ">
                     <a href="#" class="fa fa-instagram " style="padding: 0 10px; "> </a>
                     <a href="#" class="fa fa-linkedin " style="padding: 0 10px; "> </a>
@@ -499,7 +526,8 @@
             </div>
         </div>
         <hr>
-        <h3 style="margin: 0;padding: 10px; font-size: 15px; ">Made By Minhal Ali Khan , Sitanshu Chauhan and Ayush Aditya</h3>
+        <h3 style="margin: 0;padding: 10px; font-size: 15px; ">Made By Minhal Ali Khan , Sitanshu Chauhan and Ayush
+            Aditya</h3>
     </footer>
 </body>
 
