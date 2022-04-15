@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>hackathon</title>
+
+    <style>
+        .contact {
+            width: 300px;
+            height: fit-content;
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+            border-radius: 20px;
+            background-color: rgba(18, 29, 57, 0.1);
+            box-shadow: 4px 4px 8px #00806e8c
+        }
+        
+        .contact-main {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .contact-main a {
+            position: absolute;
+            left: 0;
+            z-index: 20;
+            right: 0;
+            top: 50%;
+            visibility: hidden;
+            font-weight: bolder;
+            color: rgb(0, 255, 247);
+            letter-spacing: 3px;
+        }
+        
+        .contact-main:hover a {
+            visibility: visible;
+        }
+        
+        .contact:hover {
+            filter: blur(10px) contrast(0.6) saturate(0.5) brightness(0.6);
+            cursor: pointer;
+        }
+        
+        .contact img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+        }
+        
+        .contact-sub {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .contact .description {
+            padding: 20px;
+        }
+        
+        .description a {
+            color: var(--neon);
+        }
+        
+        section h3 {
+            padding: 20px;
+            font-weight: 100;
+            font-size: large;
+        }
+        
+        .hover {
+            filter: blur(10px) contrast(0.6) saturate(0.5) brightness(0.6);
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<script>
+    function menutoggle() {
+        var x = document.getElementById("links");
+        x.classList.toggle("navshow")
+    }
+
+    $(document).ready(function() {
+
+        $(".contact-main a").hover(function() {
+            $(this).siblings("div").toggleClass("hover")
+        });
+
+    });
+</script>
+
+<body>
+    <div id="home">
+
+    </div>
+    <nav class="navbar">
+
+        <a id="gbu_" class=" nav-side" href="https://www.gbu.ac.in/" target="_blank">GBU</a>
+
+        <ul id="links" class="">
+            <li>
+                <a href="index.html" onclick="menutoggle()">home</a>
+            </li>
+            <li>
+                <a href="about.html" onclick="menutoggle()">about</a>
+            </li>
+            <li>
+                <a href="projects.html" onclick="menutoggle()">projects</a>
+            </li>
+            <li>
+                <a href="#winner" onclick="menutoggle()">winner</a>
+            </li>
+            <li>
+                <a href="achievement.html" onclick="menutoggle()">Achievement</a>
+            </li>
+            <li>
+                <a href="#evet-highlights " onclick="menutoggle()">event-highlights</a>
+            </li>
+            <li>
+                <a href="contact.html" onclick="menutoggle()">contact</a>
+            </li>
+
+        </ul>
+        <a href="javascript:void(0);" class="icon nav-side" onclick="menutoggle()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <section>
+        <h1>Contact us</h1>
+
+        <h3> Faculty Coordinators</h3>
+        <div class="content">
+            <div class="contact-main">
+                <div class="contact">
+                    <img src="./images/naved.jpeg">
+                    <div class="description">
+                        Dr. Navaid.Z.Rizvi
+                        <br> Placement Head Of ICT Departmen
+                    </div>
+                </div>
+                <a href=" https://faculty.gbu.ac.in/v/home.php?id=71">contact</a>
+            </div>
+            <div class="contact-main">
+                <div class="contact ">
+                    <img src="./images/vimlesh.jpg ">
+                    <div class="description ">
+                        Dr. Vimlesh Kumar Ray
+                        <br> Placement Head Of ICT Department
+                    </div>
+                </div>
+                <a href="https://faculty.gbu.ac.in/v/contact.php?id=60"> contact</a>
+            </div>
+        </div>
+        <h3> General Secretary</h3>
+        <div class="content">
+            <div class="contact-main">
+                <div class="contact">
+                    <img src="./images/anushka.jpeg">
+                    <div class="description">
+                        Anushka Srivastava
+                        <br> 19/BCS/180
+                        <br> BTech CSE(III - C)
+
+                    </div>
+                </div>
+                <a href=" https://faculty.gbu.ac.in/v/home.php?id=71">contact</a>
+            </div>
+        </div>
+        <h3> Secretaries </h3>
+        <div class="content">
+
+            <div class="contact-main">
+                <div class="contact">
+                    <img src="./images/nikhil.jpeg">
+                    <div class="description">
+                        Nikhil Mishra
+                        <br> 19/BIT/055
+                        <br> BTech IT(III)
+                    </div>
+                </div>
+                <a href="#">contact</a>
+            </div>
+            <div class="contact-main">
+                <div class="contact">
+                    <img src="./images/dhruv.jpeg">
+                    <div class="description">
+
+                        Dhruv Upadhyay
+                        <br> 19/BEC/035
+                        <br> BTech ECE(III - A)
+
+                    </div>
+                </div>
+                <a href=" #">contact</a>
+            </div>
+            <div class="contact-main">
+                <div class="contact ">
+                    <img src="./images/shivi.jpeg">
+                    <div class="description ">
+                        Shivi Sinha
+                        <br> 19/BEC/081
+                        <br> BTech ECE(III - B)
+                    </div>
+                </div>
+                <a href="#"> contact</a>
+            </div>
+            <div class="contact-main">
+                <div class="contact ">
+                    <img src="./images/rishab.jpeg">
+                    <div class="description ">
+                        Rishabh
+                        <br> 19/BAI/017
+                        <br> BTech AI(III)
+                    </div>
+                </div>
+                <a href="#"> contact</a>
+            </div>
+            <div class="contact-main">
+                <div class="contact ">
+                    <img src="./images/ishika.jpeg">
+                    <div class="description ">
+                        Ishika Singh
+                        <br> 19/BCS/048
+                        <br> BTech CSE(III - A)
+                    </div>
+                </div>
+                <a href="#"> contact</a>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footr ">
+            <div id="venue ">
+                <h3>VENUE</h3>
+                <h5>School of ICT, GBU, Greater Noida (201312)</h5>
+            </div>
+            <div id="social ">
+                <h3>JOIN US</h3>
+                <h5>Don't miss a thing! Receive daily news You should connect social area for Any Proper Updates Anytime
+                </h5>
+                <div id="action_buttons ">
+                    <a href="#" class="fa fa-instagram " style="padding: 0 10px; "> </a>
+                    <a href="#" class="fa fa-linkedin " style="padding: 0 10px; "> </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h5 style="margin: 0;padding: 10px; font-size: 15px; ">Made By Minhal Ali Khan , Sitanshu Chauhan and Ayush Aditya
+        </h5>
+    </footer>
+</body>
+
+</html>
